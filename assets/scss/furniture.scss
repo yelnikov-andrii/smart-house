@@ -1,0 +1,90 @@
+.furniture {
+  padding: 138px 0 200px;
+  background: #24282F;
+
+  &__h3 {
+    color: #FFF;
+    font-family: HeliosExtC;
+    font-size: 46px;
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &__block {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__description {
+    padding: 120px 80px 20px 80px;
+
+    @media screen and (max-width: 768px) {
+      padding: 60px 20px 20px;
+    }
+  }
+
+  &__paragraph {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    margin: 0 0 60px 0;
+
+    &:first-child {
+      margin: 0 0 60px 0;
+    }
+
+    &:nth-child(2) {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__list {
+    margin: 0 0 138px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  &__link-block {
+    text-align: right;
+  }
+
+  &__link {
+    color: #ED7D31;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+
+    @media screen and (max-width: 768px) {
+      justify-content: flex-end;
+    }
+  }
+}

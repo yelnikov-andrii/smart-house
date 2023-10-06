@@ -7,6 +7,16 @@ button {
   border: none;
   outline: none;
   background: transparent;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 ul {

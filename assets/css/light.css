@@ -1,0 +1,76 @@
+.light {
+  padding: 160px 0;
+  background: #24282F;
+}
+.light__h3 {
+  margin: 0 0 60px 0;
+  color: #FFF;
+  font-family: HeliosExtC;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .light__h3 {
+    font-size: 24px;
+    margin: 0 0 40px 0;
+  }
+}
+.light__block {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .light__block {
+    flex-direction: column;
+  }
+}
+.light__block-item {
+  padding: 540px 0 40px 80px;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .light__block-item {
+    width: 100%;
+    padding: 255px 0 30px 20px;
+  }
+}
+.light__block-item:nth-child(1) {
+  background-image: url(../images/light-01.png);
+}
+.light__block-item:nth-child(2) {
+  background-image: url(../images/light-02.png);
+}
+.light__h4 {
+  color: #FFF;
+  font-family: HeliosExtC;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .light__h4 {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+  }
+}
+.light__link {
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #fff;
+  display: flex;
+  gap: 8px;
+}
+
+/*# sourceMappingURL=light.css.map */

@@ -1,0 +1,112 @@
+.commercial {
+  padding: 118px 0;
+  background-image: url(../images/commercial-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__h3 {
+    color: #FFF;
+    font-family: HeliosExtC;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 14px 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      text-align: left;
+      margin: 0 0 45px 0;
+    }
+  }
+
+  &__paragraph {
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    margin: 0 0 22px 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 8px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    width: calc((100% / 3) - 16px);
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    &--username {
+      &::before {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/person-icon.svg);
+      }
+    }
+
+    &--cellphone {
+      &::before {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/cell-phone-icon.svg);
+      }
+    }
+  }
+
+  &__input {
+    border: 1px solid #4C4F55;
+    background: #24282F;
+    height: 65px;
+    padding: 22px 0 22px 46px;
+    width: 100%;
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &__button {
+    background: #ED7D31;
+    box-shadow: 0px 1px 28px 0px rgba(224, 172, 124, 0.10);
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    width: calc((100% / 3) - 16px);
+    height: 65px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

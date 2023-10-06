@@ -1,0 +1,92 @@
+.header {
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background: #132231;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 24px;
+  }
+
+  &__menu-block {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+
+  &__menu-name {
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__menu-languages {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__language {
+    color: #5F6565;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &--active {
+      color: #FFF;
+    }
+  }
+
+  &__lang-separator {
+    color: #5F6565;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__menu-button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__buttons-block {
+    display: flex;
+    height: 100%;
+  }
+
+  &__button {
+    height: 100%;
+    padding: 0 30px;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+  
+    &:first-child {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+
+      @media screen and (max-width: 768px) {
+        border-left: none;
+        border-right: none;
+        padding: 0;
+      }
+    }
+
+    &:last-child {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    
+  }
+}

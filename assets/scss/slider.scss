@@ -1,0 +1,24 @@
+.slider {
+  padding: 50px 0;
+  background-color: #181D24;
+  height: 800px;
+  overflow: hidden;
+
+  &__item {
+    background-image: url(../images/swiper-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  &__txt-block {
+    background: #24282F;
+    padding: 40px 40px 20px 40px;
+  }
+}

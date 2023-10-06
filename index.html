@@ -27,11 +27,17 @@
         </span>
       </button>
       <div class="header__menu-languages">
-        <a class="header__language">
+        <a 
+          class="header__language" 
+          id="lang-en"
+        >
           EN
         </a>
         <span class="header__lang-separator">/</span>
-        <a class="header__language header__language--active">
+        <a 
+          class="header__language header__language--active"
+          id="lang-ua"
+          >
           UA
         </a>
       </div>
@@ -378,6 +384,7 @@
         <li class="server__list-item">
           <img 
             src="./assets/images/server-arrow.svg"
+            class="server__list-img"
           />
           <span>
             Зроблений з низьколегованої сталі товщиною - 1мм;
@@ -386,6 +393,7 @@
         <li class="server__list-item">
           <img 
             src="./assets/images/server-arrow.svg"
+            class="server__list-img"
           />
           <span>
             Покраска здійснюється спеціальною порошковою фарбою при температурі 180-220°С, що забезпечує утворення ударостійкого антикорозійного покриття;
@@ -394,6 +402,7 @@
         <li class="server__list-item">
           <img 
             src="./assets/images/server-arrow.svg"
+            class="server__list-img"
           />
           <span>
             Зроблений з низьколегованої сталі товщиною - 1мм;
@@ -418,15 +427,30 @@
       <p class="commercial__paragraph">
         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов
       </p>
-      <form class="commercial__form">
-        <input 
-          placeholder="Як до вас звертатися?"
-          class="commercial__input"
-        />
-        <input 
-          placeholder="Введіть номер телефону"
-          class="commercial__input"
-        />
+      <form 
+        class="commercial__form"
+        onsubmit="handleSubmit(event)"
+      >
+        <div 
+          class="commercial__input-wrapper commercial__input-wrapper--username"
+        >
+          <input 
+            placeholder="Як до вас звертатися?"
+            class="commercial__input"
+            type="text"
+            id="name"
+          />
+        </div>
+        <div 
+          class="commercial__input-wrapper commercial__input-wrapper--cellphone"
+        >
+          <input 
+            placeholder="Введіть номер телефону"
+            class="commercial__input"
+            type="text"
+            id="phone"
+          />
+        </div>
         <button class="commercial__button">
           Передзвоніть мені
         </button>
@@ -456,32 +480,69 @@
       </form>
       <div class="questions__lists">
         <ul class="questions__list">
-          <li>
-            <a>Главный офис, Украина, г.Киев, ул.Владимирская 89, 
-              офис 25
+          <li class="questions__item">
+            <a
+              href="https://maps.app.goo.gl/6WDJfAVYXeWpWcUn7"
+              target="_blank"
+              class="questions__link questions__link--ua"
+            >
+              Главный офис, Украина, г.Киев, ул.Владимирская 89, 
+                офис 25
             </a>
           </li>
-          <li>
-            <a href="tel:+38 093 820 02 81">+38 093 820 02 81
+          <li class="questions__item">
+            <a 
+              href="tel:+38 093 820 02 81"
+              class="questions__link"
+            >
+              <img 
+                src="./assets/images/phone-icon.svg"
+              />
+              +38 093 820 02 81
             </a>
           </li>
-          <li>
-            <a href="mailto:sales@rexmy.com.ua">sales@rexmy.com.ua
+          <li class="questions__item">
+            <a 
+              href="mailto:sales@rexmy.com.ua"
+              class="questions__link"
+            >
+              <img 
+                src="./assets/images/email-icon.svg"
+              />
+              sales@rexmy.com.ua
             </a>
           </li>
         </ul>
         <ul class="questions__list">
-          <li>
-            <a>Англия, Лондон, 63-66 Хэттон Гарденс, 5й этаж, офис 23
+          <li class="questions__item">
+            <a
+              href="https://maps.app.goo.gl/Tn8fJphzJsYZh9je7"
+              class="questions__link questions__link--uk"
+              target="_blank"
+            >
+              Англия, Лондон, 63-66 Хэттон Гарденс, 5й этаж, офис 23
             </a>
           </li>
-          <li>
-            <a>+44 07 5333 38239
-
+          <li class="questions__item">
+            <a
+              href="tel:+44 07 5333 38239"
+              class="questions__link"
+            >
+              <img 
+                src="./assets/images/phone-icon.svg"
+              />
+              +44 07 5333 38239
             </a>
           </li>
-          <li>
-            <a>sales@rexmy.com.ua
+          <li class="questions__item">
+            <a 
+              href="mailto:sales@rexmy.com.ua"
+              class="questions__link"
+            >
+              <img 
+                src="./assets/images/email-icon.svg"
+              />
+              sales@rexmy.com.ua
             </a>
           </li>
         </ul>
@@ -509,20 +570,40 @@
         </nav>
         <div class="footer__icons-block">
           <nav class="footer__icons">
-            <a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+            >
               <img 
                 src="./assets/images/instagram.svg"
               />
             </a>
-            <a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+            >
               <img 
                 src="./assets/images/facebook.svg"
               />
             </a>
           </nav>
           <nav class="footer__phones">
-            <a>+38 093 820 02 81</a>
-            <a>+44 07 5333 38239</a>
+            <a 
+              href="tel:+38 093 820 02 81"
+            >
+              <img 
+                src="./assets/images/phone-icon.svg"
+              />
+              +38 093 820 02 81
+            </a>
+            <a
+              href="tel:+44 07 5333 38239"
+            >
+              <img
+                src="./assets/images/phone-icon.svg"
+              />
+              +44 07 5333 38239
+            </a>
           </nav>
         </div>
       </div>
@@ -542,5 +623,6 @@
   </footer>
   <script src="./assets/js/swiper.js">
   </script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

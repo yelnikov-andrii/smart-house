@@ -1,0 +1,106 @@
+.commercial {
+  padding: 118px 0;
+  background-image: url(../images/commercial-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.commercial__h3 {
+  color: #FFF;
+  font-family: HeliosExtC;
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 14px 0;
+}
+@media screen and (max-width: 768px) {
+  .commercial__h3 {
+    font-size: 24px;
+    text-align: left;
+    margin: 0 0 45px 0;
+  }
+}
+.commercial__paragraph {
+  color: #FFF;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0 0 22px 0;
+}
+@media screen and (max-width: 768px) {
+  .commercial__paragraph {
+    font-size: 14px;
+  }
+}
+.commercial__form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 8px;
+}
+@media screen and (max-width: 768px) {
+  .commercial__form {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.commercial__input-wrapper {
+  position: relative;
+  width: calc(33.3333333333% - 16px);
+}
+@media screen and (max-width: 768px) {
+  .commercial__input-wrapper {
+    width: 100%;
+  }
+}
+.commercial__input-wrapper--username::before {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/person-icon.svg);
+}
+.commercial__input-wrapper--cellphone::before {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/cell-phone-icon.svg);
+}
+.commercial__input {
+  border: 1px solid #4C4F55;
+  background: #24282F;
+  height: 65px;
+  padding: 22px 0 22px 46px;
+  width: 100%;
+  color: #fff;
+}
+.commercial__input::placeholder {
+  color: #fff;
+}
+.commercial__button {
+  background: #ED7D31;
+  box-shadow: 0px 1px 28px 0px rgba(224, 172, 124, 0.1);
+  color: #FFF;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  width: calc(33.3333333333% - 16px);
+  height: 65px;
+}
+@media screen and (max-width: 768px) {
+  .commercial__button {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=commercial.css.map */
