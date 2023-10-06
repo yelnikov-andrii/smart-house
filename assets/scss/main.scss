@@ -1,23 +1,5 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+@import './reset.scss';
+@import './swiper.scss';
 
 .container {
   max-width: 1310px;
@@ -214,7 +196,7 @@ ul {
 }
 
 .safety {
-  padding: 138px 0 200px;
+  padding: 138px 0 100px;
   background-image: url(../images/bg-02.png);
   background-color: #181D24;
   background-position: center;
@@ -282,6 +264,11 @@ ul {
     &--sm {
       padding: 0 15px;
       margin: 0;
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
     }
   }
 
@@ -293,6 +280,31 @@ ul {
     font-weight: 400;
     line-height: 150%;
     text-decoration: none;
+  }
+}
+
+.slider {
+  padding: 50px 0;
+  background-color: #181D24;
+  height: 800px;
+  overflow: hidden;
+
+  &__item {
+    background-image: url(../images/swiper-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  &__txt-block {
+    background: #24282F;
+    padding: 40px 40px 20px 40px;
   }
 }
 
