@@ -51,12 +51,49 @@
     margin: 0 0 40px 0;
   }
 
+  &__input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 409px;
+
+    &--username {
+      &::before {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/person-icon.svg);
+      }
+    }
+
+    &--cellphone {
+      &::before {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/cell-phone-icon.svg);
+      }
+    }
+  }
+
   &__input {
     border: 1px solid #4C4F55;
     background: #24282F;
     height: 65px;
     padding: 22px 0 22px 46px;
-    max-width: 409px;
+    color: #fff;
+    width: 100%;
+
+    &::placeholder {
+      color: #fff;
+    }
   }
 
   &__button {

@@ -140,29 +140,48 @@
         <div class="swiper-slide">
           <div class="slider__item">
             <div class="slider__txt-block">
-              <p>Управління вентиляцією</p>
-              <a>
+              <h5 class="slider__h5">
+                Управління світлом
+              </h5>
+              <a class="slider__link">
                 Дізнатись більше
               </a>
               <img 
-                src="./assets/images/arrow-white.svg"
+                src="./assets/images/arrow.svg"
               />
             </div>
           </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="slider__item">
-          <div class="slider__txt-block">
-            <p>Управління вентиляцією</p>
-            <a>
-              Дізнатись більше
-            </a>
-            <img 
-              src="./assets/images/arrow-white.svg"
-            />
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__item">
+            <div class="slider__txt-block">
+              <h5 class="slider__h5">
+                Управління вентиляцією
+              </h5>
+              <a class="slider__link">
+                Дізнатись більше
+              </a>
+              <img 
+                src="./assets/images/arrow.svg"
+              />
+            </div>
           </div>
         </div>
-    </div>
+        <div class="swiper-slide">
+          <div class="slider__item">
+            <div class="slider__txt-block">
+              <h5 class="slider__h5">
+                Управління вентиляцією
+              </h5>
+              <a class="slider__link">
+                Дізнатись більше
+              </a>
+              <img 
+                src="./assets/images/arrow.svg"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="swiper-pagination"></div>
 
@@ -280,38 +299,28 @@
         </p>
         <ul class="furniture__list">
           <li class="furniture__item">
-            <img 
-              class="furniture__icon"
-              src="./assets/images/furniture-icon.svg"
-            />
+            <div class="furniture__icon">
+            </div>
             <span>Розумні вимикачі</span>
           </li>
           <li class="furniture__item">
-            <img 
-              class="furniture__icon"
-              src="./assets/images/furniture-icon.svg"
-            />
+            <div class="furniture__icon">
+            </div>
             <span>Безшумні вимикачі</span>
           </li>
           <li class="furniture__item">
-            <img 
-              class="furniture__icon"
-              src="./assets/images/furniture-icon.svg"
-            />
+            <div class="furniture__icon">
+            </div>
             <span>USB/Ethernet розетки</span>
           </li>
           <li class="furniture__item">
-            <img 
-              class="furniture__icon"
-              src="./assets/images/furniture-icon.svg"
-            />
+            <div class="furniture__icon">
+            </div>
             <span>Подразетники</span>
           </li>
           <li class="furniture__item">
-            <img 
-              class="furniture__icon"
-              src="./assets/images/furniture-icon.svg"
-            />
+            <div class="furniture__icon">
+            </div>
             <span>Розетки 220в</span>
           </li>
         </ul>
@@ -480,14 +489,26 @@
         Залишіть заявку і ми зв'яжемося з вами найближчим часом для обговорення деталей
       </p>
       <form class="questions__form">
-        <input 
-          placeholder="Як до вас звертатися?"
-          class="questions__input"
-        />
-        <input 
-          placeholder="Введіть номер телефону"
-          class="questions__input"
-        />
+        <div 
+          class="questions__input-wrapper questions__input-wrapper--username"
+        >
+          <input 
+            placeholder="Як до вас звертатися?"
+            class="questions__input"
+            type="text"
+            id="name1"
+          />
+        </div>
+        <div 
+          class="questions__input-wrapper questions__input-wrapper--cellphone"
+        >
+          <input 
+            placeholder="Введіть номер телефону"
+            class="questions__input"
+            type="text"
+            id="phone1"
+          />
+        </div>
         <button class="questions__button">
           Передзвоніть мені
         </button>
