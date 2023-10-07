@@ -1,6 +1,7 @@
 .furniture {
   padding: 138px 0 200px;
   background: #24282F;
+  min-height: 100vh;
 }
 .furniture__h3 {
   color: #FFF;

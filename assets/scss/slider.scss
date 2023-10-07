@@ -3,6 +3,7 @@
   background-color: #181D24;
   height: 800px;
   overflow: hidden;
+  min-height: 100vh;
 
   &__item {
     background-image: url(../images/swiper-01.png);

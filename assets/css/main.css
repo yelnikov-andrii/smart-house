@@ -180,6 +180,7 @@ ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .safety__h2 {
   color: #FFF;
@@ -264,6 +265,7 @@ ul {
   background-color: #181D24;
   height: 800px;
   overflow: hidden;
+  min-height: 100vh;
 }
 .slider__item {
   background-image: url(../images/swiper-01.png);
@@ -298,6 +300,7 @@ ul {
 .energy {
   padding: 138px 0 200px;
   background: #24282F;
+  min-height: 100vh;
 }
 .energy__h3 {
   color: #FFF;
@@ -378,6 +381,7 @@ ul {
 .light {
   padding: 160px 0;
   background: #24282F;
+  min-height: 100vh;
 }
 .light__h3 {
   margin: 0 0 60px 0;
@@ -475,6 +479,7 @@ ul {
 .furniture {
   padding: 138px 0 200px;
   background: #24282F;
+  min-height: 100vh;
 }
 .furniture__h3 {
   color: #FFF;
@@ -562,6 +567,7 @@ ul {
 .acoustic {
   padding: 138px 0 200px;
   background: #24282F;
+  min-height: 100vh;
 }
 .acoustic__h3 {
   color: #FFF;
@@ -641,6 +647,7 @@ ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .server__block {
   display: flex;
@@ -741,6 +748,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
 }
 .commercial__h3 {
   color: #FFF;
@@ -844,6 +852,7 @@ ul {
   background: #24282F;
   display: flex;
   width: 100%;
+  min-height: 100vh;
 }
 @media screen and (max-width: 768px) {
   .questions {
@@ -1119,6 +1128,7 @@ ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .main__h1 {
   text-align: center;
