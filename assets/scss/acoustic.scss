@@ -8,13 +8,13 @@
   background-position: center top;
 
   @media screen and (max-width: 768px) {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
 
   &__h3 {
     color: #FFF;
-    font-family: HeliosExtC;
-    font-size: 46px;
+    font-family: 'HeliosExtC';
+    font-size: 3.1vw;
     font-weight: 700;
     line-height: 150%;
     text-transform: uppercase;
@@ -67,9 +67,8 @@
 
   &__h4 {
     color: #FFF;
-    font-family: HeliosExtC;
-    font-size: 27px;
-    font-style: normal;
+    font-family: 'HeliosExtC';
+    font-size: 1.8vw;
     font-weight: 400;
     line-height: 150%;
     text-transform: uppercase;
@@ -83,8 +82,7 @@
 
   &__link {
     color: #FFF;
-    font-family: Rubik;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: 400;
     line-height: 150%;
 

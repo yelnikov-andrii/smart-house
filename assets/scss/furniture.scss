@@ -4,17 +4,17 @@
   min-height: 100vh;
 
   @media screen and (max-width: 768px) {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
 
   &__h3 {
     color: #FFF;
     font-family: HeliosExtC;
-    font-size: 46px;
+    font-size: 3.1vw;
     font-weight: 700;
     margin: 0 0 60px 0;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       margin: 0 0 30px 0;
       font-size: 24px;
     }
@@ -48,9 +48,7 @@
 
   &__paragraph {
     color: #FFF;
-    font-family: Rubik;
-    font-size: 18px;
-    font-style: normal;
+    font-size: 1.2vw;
     font-weight: 300;
     line-height: 150%;
     margin: 0 0 60px 0;
@@ -63,7 +61,7 @@
       margin: 0 0 30px 0;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: 14px;
     }
   }
@@ -76,7 +74,7 @@
     flex-direction: column;
     gap: 40px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       gap: 15px;
       margin: 0 0 30px 0;
     }
@@ -87,11 +85,11 @@
     align-items: center;
     gap: 8px;
     color: #fff;
-    font-size: 22px;
+    font-size: 1.5vw;
     font-weight: 400;
     line-height: 150%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: 14px;
     }
   }
@@ -110,9 +108,7 @@
 
   &__link {
     color: #ED7D31;
-    font-family: Rubik;
-    font-size: 14px;
-    font-style: normal;
+    font-size: 1.2vw;
     font-weight: 400;
     line-height: 150%;
     text-decoration: none;
@@ -121,6 +117,7 @@
 
     @media screen and (max-width: 768px) {
       justify-content: flex-end;
+      font-size: 14px;
     }
   }
 }

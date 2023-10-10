@@ -185,14 +185,13 @@ ul {
 .safety__h2 {
   color: #FFF;
   font-family: HeliosExtC;
-  font-size: 46px;
-  font-style: normal;
+  font-size: 3.2vw;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
   margin: 0 0 132px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .safety__h2 {
     font-size: 24px;
     margin: 0 0 45px 0;
@@ -227,7 +226,7 @@ ul {
 .safety__paragraph {
   color: #FFF;
   font-family: Rubik;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
@@ -262,13 +261,18 @@ ul {
 .safety__link {
   color: #ED7D31;
   font-family: Rubik;
-  font-size: 14px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
   text-decoration: none;
   display: flex;
   gap: 8px;
+}
+@media screen and (max-width: 768px) {
+  .safety__link {
+    font-size: 14px;
+  }
 }
 
 .slider {
@@ -321,13 +325,19 @@ ul {
   background-size: cover;
   background-position: center top;
 }
+@media screen and (max-width: 768px) {
+  .energy {
+    padding: 60px 0 0 0;
+  }
+}
 .energy__h3 {
   color: #FFF;
   font-family: HeliosExtC;
-  font-size: 46px;
+  font-size: 3.1vw;
   font-weight: 700;
+  margin: 0 0 60px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .energy__h3 {
     font-size: 24px;
   }
@@ -344,7 +354,7 @@ ul {
   padding: 120px 80px 20px 80px;
   width: 50%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .energy__description {
     padding: 0 15px 20px;
     width: 100%;
@@ -361,7 +371,7 @@ ul {
 .energy__paragraph {
   color: #FFF;
   font-family: Rubik;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
@@ -373,7 +383,7 @@ ul {
 .energy__paragraph:nth-child(2) {
   margin: 0 0 30px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .energy__paragraph {
     font-size: 14px;
   }
@@ -396,6 +406,9 @@ ul {
   align-items: center;
   gap: 8px;
   color: #fff;
+  font-size: 1.5vw;
+  font-weight: 400;
+  line-height: 150%;
 }
 @media screen and (max-width: 768px) {
   .energy__item {
@@ -411,8 +424,7 @@ ul {
 }
 .energy__link {
   color: #ED7D31;
-  font-family: Rubik;
-  font-size: 14px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -421,23 +433,33 @@ ul {
   justify-content: flex-end;
   gap: 8px;
 }
+@media screen and (max-width: 768px) {
+  .energy__link {
+    font-size: 14px;
+  }
+}
 
 .light {
   padding: 160px 0;
   background: #24282F;
   min-height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .light {
+    padding: 60px 0 0 0;
+  }
+}
 .light__h3 {
   margin: 0 0 60px 0;
   color: #FFF;
   font-family: HeliosExtC;
-  font-size: 46px;
+  font-size: 3.1vw;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .light__h3 {
     font-size: 24px;
     margin: 0 0 40px 0;
@@ -491,9 +513,8 @@ ul {
 }
 .light__h4 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 27px;
-  font-style: normal;
+  font-family: "HeliosExtC";
+  font-size: 1.8vw;
   font-weight: 400;
   line-height: 150%;
   text-transform: uppercase;
@@ -501,7 +522,7 @@ ul {
   position: relative;
   z-index: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .light__h4 {
     font-size: 18px;
     margin: 0 0 30px 0;
@@ -509,7 +530,7 @@ ul {
 }
 .light__link {
   font-family: Rubik;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -519,7 +540,7 @@ ul {
   position: relative;
   z-index: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .light__link {
     font-size: 14px;
   }
@@ -532,17 +553,17 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .furniture {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
 }
 .furniture__h3 {
   color: #FFF;
   font-family: HeliosExtC;
-  font-size: 46px;
+  font-size: 3.1vw;
   font-weight: 700;
   margin: 0 0 60px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .furniture__h3 {
     margin: 0 0 30px 0;
     font-size: 24px;
@@ -576,9 +597,7 @@ ul {
 }
 .furniture__paragraph {
   color: #FFF;
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.2vw;
   font-weight: 300;
   line-height: 150%;
   margin: 0 0 60px 0;
@@ -589,7 +608,7 @@ ul {
 .furniture__paragraph:nth-child(2) {
   margin: 0 0 30px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .furniture__paragraph {
     font-size: 14px;
   }
@@ -602,7 +621,7 @@ ul {
   flex-direction: column;
   gap: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .furniture__list {
     gap: 15px;
     margin: 0 0 30px 0;
@@ -613,11 +632,11 @@ ul {
   align-items: center;
   gap: 8px;
   color: #fff;
-  font-size: 22px;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 150%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .furniture__item {
     font-size: 14px;
   }
@@ -634,9 +653,7 @@ ul {
 }
 .furniture__link {
   color: #ED7D31;
-  font-family: Rubik;
-  font-size: 14px;
-  font-style: normal;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 150%;
   text-decoration: none;
@@ -646,6 +663,7 @@ ul {
 @media screen and (max-width: 768px) {
   .furniture__link {
     justify-content: flex-end;
+    font-size: 14px;
   }
 }
 
@@ -660,13 +678,13 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .acoustic {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
 }
 .acoustic__h3 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 46px;
+  font-family: "HeliosExtC";
+  font-size: 3.1vw;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -716,9 +734,8 @@ ul {
 }
 .acoustic__h4 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 27px;
-  font-style: normal;
+  font-family: "HeliosExtC";
+  font-size: 1.8vw;
   font-weight: 400;
   line-height: 150%;
   text-transform: uppercase;
@@ -732,8 +749,7 @@ ul {
 }
 .acoustic__link {
   color: #FFF;
-  font-family: Rubik;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 150%;
 }
@@ -754,12 +770,11 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .server {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
 }
 .server__block {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   width: 100%;
 }
@@ -768,6 +783,9 @@ ul {
     flex-direction: column;
   }
 }
+.server__item {
+  width: 50%;
+}
 @media screen and (max-width: 768px) {
   .server__item {
     width: 100%;
@@ -775,11 +793,9 @@ ul {
 }
 .server__h4 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 46px;
-  font-style: normal;
+  font-family: "HeliosExtC";
+  font-size: 3.1vw;
   font-weight: 700;
-  line-height: normal;
   margin: 0 0 60px 0;
 }
 @media screen and (max-width: 768px) {
@@ -790,11 +806,6 @@ ul {
 }
 .server__h4--orange {
   color: #ED7D31;
-  font-family: HeliosExtC;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 @media screen and (max-width: 768px) {
   .server__h4--orange {
@@ -803,8 +814,7 @@ ul {
 }
 .server__paragraph {
   color: #FFF;
-  font-family: Rubik;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 300;
   line-height: 150%;
   margin: 0 0 60px 0;
@@ -830,8 +840,7 @@ ul {
   gap: 20px;
   align-items: center;
   color: #FFF;
-  font-family: Rubik;
-  font-size: 22px;
+  font-size: 1.5vw;
   font-weight: 400;
   line-height: 150.6%;
 }
@@ -858,10 +867,15 @@ ul {
   background-position: center;
   min-height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .commercial {
+    padding: 60px 0 0 0;
+  }
+}
 .commercial__h3 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 46px;
+  font-family: "HeliosExtC";
+  font-size: 3.1vw;
   font-weight: 700;
   text-align: center;
   margin: 0 0 14px 0;
@@ -876,9 +890,7 @@ ul {
 .commercial__paragraph {
   color: #FFF;
   text-align: center;
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1.2vw;
   font-weight: 300;
   line-height: 150%;
   margin: 0 0 22px 0;
@@ -945,7 +957,6 @@ ul {
   background: #ED7D31;
   box-shadow: 0px 1px 28px 0px rgba(224, 172, 124, 0.1);
   color: #FFF;
-  font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
   width: calc(33.3333333333% - 16px);
@@ -994,8 +1005,8 @@ ul {
 }
 .questions__h3 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 46px;
+  font-family: "HeliosExtC";
+  font-size: 3.1vw;
   font-weight: 700;
   margin: 0 0 40px 0;
 }
@@ -1006,8 +1017,7 @@ ul {
 }
 .questions__paragraph {
   color: #FFF;
-  font-family: Rubik;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 300;
   line-height: 150%;
   margin: 0 0 40px 0;
@@ -1248,6 +1258,11 @@ body {
 .container--sm {
   max-width: 1046px;
 }
+@media screen and (min-width: 1200px) {
+  .container--sm {
+    max-width: 1310px;
+  }
+}
 
 .main {
   padding: 200px 0 450px;
@@ -1262,13 +1277,13 @@ body {
   text-align: center;
   color: #FFF;
   font-family: HeliosExtC;
-  font-size: 42px;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin: 0 0 35px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .main__h1 {
     font-size: 24px;
   }
@@ -1278,7 +1293,7 @@ body {
   color: #FFF;
   text-align: center;
   font-family: Rubik;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
@@ -1286,8 +1301,12 @@ body {
 }
 @media screen and (max-width: 768px) {
   .main__description {
-    font-size: 14px;
     margin: 0 0 40px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main__description {
+    font-size: 14px;
   }
 }
 .main__buttons-block {

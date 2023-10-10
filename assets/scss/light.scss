@@ -3,17 +3,21 @@
   background: #24282F;
   min-height: 100vh;
 
+  @media screen and (max-width: 768px) {
+    padding: 60px 0 0 0;
+  }
+
   &__h3 {
     margin: 0 0 60px 0;
     color: #FFF;
     font-family: HeliosExtC;
-    font-size: 46px;
+    font-size: 3.1vw;
     font-weight: 700;
     line-height: 150%;
     text-transform: uppercase;
     text-align: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: 24px;
       margin: 0 0 40px 0;
     }
@@ -73,9 +77,8 @@
 
   &__h4 {
     color: #FFF;
-    font-family: HeliosExtC;
-    font-size: 27px;
-    font-style: normal;
+    font-family: 'HeliosExtC';
+    font-size: 1.8vw;
     font-weight: 400;
     line-height: 150%;
     text-transform: uppercase;
@@ -83,7 +86,7 @@
     position: relative;
     z-index: 2;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: 18px;
       margin: 0 0 30px 0;
     }
@@ -91,7 +94,7 @@
 
   &__link {
     font-family: Rubik;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -101,7 +104,7 @@
     position: relative;
     z-index: 2;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: 14px;
     }
   }

@@ -35,6 +35,10 @@ body {
 
   &--sm {
     max-width: 1046px;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1310px;
+    }
   }
 }
 
@@ -51,13 +55,13 @@ body {
     text-align: center;
     color: #FFF;
     font-family: HeliosExtC;
-    font-size: 42px;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin: 0 0 35px 0;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: 24px;
     }
   }
@@ -67,15 +71,18 @@ body {
     color: #FFF;
     text-align: center;
     font-family: Rubik;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
     max-width: 1060px;
 
     @media screen and (max-width: 768px) {
-      font-size: 14px;
       margin: 0 0 40px 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
     }
   }
 
