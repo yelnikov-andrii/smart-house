@@ -2,6 +2,10 @@
   padding: 138px 0 200px;
   background: #24282F;
   min-height: 100vh;
+  background-image: url(../images/bg-clouds.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 
   &__h3 {
     color: #FFF;

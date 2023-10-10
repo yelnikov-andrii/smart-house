@@ -266,6 +266,10 @@ ul {
   height: 800px;
   overflow: hidden;
   min-height: 100vh;
+  background-image: url(../images/bg-clouds.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 .slider__item {
   background-image: url(../images/swiper-01.png);
@@ -301,6 +305,10 @@ ul {
   padding: 138px 0 200px;
   background: #24282F;
   min-height: 100vh;
+  background-image: url(../images/bg-clouds.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 .energy__h3 {
   color: #FFF;
@@ -568,6 +576,10 @@ ul {
   padding: 138px 0 200px;
   background: #24282F;
   min-height: 100vh;
+  background-image: url(../images/bg-clouds.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 .acoustic__h3 {
   color: #FFF;
@@ -1110,6 +1122,10 @@ ul {
 
 * {
   font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #181D24;
 }
 
 .container {
