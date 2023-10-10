@@ -7,8 +7,14 @@
   background-repeat: no-repeat;
   min-height: 100vh;
 
+  @media screen and (max-width: 768px) {
+    padding: 60px 0;
+  }
+
   &__block {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 100%;
 
     @media screen and (max-width: 768px) {
@@ -17,7 +23,6 @@
   }
 
   &__item {
-    width: 50%;
 
     @media screen and (max-width: 768px) {
       width: 100%;
@@ -73,6 +78,7 @@
 
     @media screen and (max-width: 768px) {
       margin: 0 0 45px 0;
+      gap: 20px;
     }
   }
 

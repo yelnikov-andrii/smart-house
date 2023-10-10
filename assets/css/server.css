@@ -7,17 +7,21 @@
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .server {
+    padding: 60px 0;
+  }
+}
 .server__block {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .server__block {
     flex-direction: column;
   }
-}
-.server__item {
-  width: 50%;
 }
 @media screen and (max-width: 768px) {
   .server__item {
@@ -73,6 +77,7 @@
 @media screen and (max-width: 768px) {
   .server__list {
     margin: 0 0 45px 0;
+    gap: 20px;
   }
 }
 .server__list-item {

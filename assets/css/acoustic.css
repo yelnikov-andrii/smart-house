@@ -7,6 +7,11 @@
   background-size: cover;
   background-position: center top;
 }
+@media screen and (max-width: 768px) {
+  .acoustic {
+    padding: 60px 0;
+  }
+}
 .acoustic__h3 {
   color: #FFF;
   font-family: HeliosExtC;
@@ -22,6 +27,8 @@
     font-size: 24px;
     text-transform: none;
     margin: 0 0 40px 0;
+    text-align: left;
+    padding: 0 20px;
   }
 }
 .acoustic__block {
@@ -44,6 +51,7 @@
 @media screen and (max-width: 768px) {
   .acoustic__item {
     width: 100%;
+    padding: 255px 0 30px 20px;
   }
 }
 .acoustic__item:nth-child(1) {
@@ -68,6 +76,7 @@
 @media screen and (max-width: 768px) {
   .acoustic__h4 {
     font-size: 18px;
+    margin: 0 0 30px 0;
   }
 }
 .acoustic__link {
@@ -76,6 +85,11 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
+}
+@media screen and (max-width: 768px) {
+  .acoustic__link {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=acoustic.css.map */

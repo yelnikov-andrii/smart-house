@@ -30,7 +30,7 @@
   display: flex;
   gap: 72px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .safety__block {
     flex-direction: column;
     gap: 45px;
@@ -40,6 +40,11 @@
   padding: 50px 10px 40px 0;
 }
 @media screen and (max-width: 768px) {
+  .safety__description {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
   .safety__description {
     padding: 0 15px;
   }
@@ -67,10 +72,16 @@
   padding: 0 15px;
   margin: 0;
   display: none;
+  font-size: 14px;
 }
 @media screen and (max-width: 768px) {
   .safety__paragraph--sm {
     display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .safety__paragraph {
+    font-size: 14px;
   }
 }
 .safety__link {

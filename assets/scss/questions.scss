@@ -4,15 +4,22 @@
   width: 100%;
   min-height: 100vh;
 
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 
   &__block {
     width: 50%;
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       width: 100%;
+
+      &--iframe {
+        min-height: 100vh;
+      }
     }
 
     &:first-child {
@@ -43,6 +50,11 @@
     font-weight: 300;
     line-height: 150%;
     margin: 0 0 40px 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      margin: 0 0 30px 0;
+    }
   }
 
   &__form {
@@ -110,6 +122,7 @@
 
   &__lists {
     display: flex;
+    justify-content: space-around;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;

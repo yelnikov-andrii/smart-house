@@ -34,6 +34,7 @@
 @media screen and (max-width: 768px) {
   .commercial__paragraph {
     font-size: 14px;
+    text-align: left;
   }
 }
 .commercial__form {

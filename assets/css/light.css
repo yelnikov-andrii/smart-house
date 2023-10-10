@@ -23,7 +23,7 @@
   display: flex;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .light__block {
     flex-direction: column;
   }
@@ -94,6 +94,11 @@
   gap: 8px;
   position: relative;
   z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .light__link {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=light.css.map */
