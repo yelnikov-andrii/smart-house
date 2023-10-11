@@ -122,6 +122,8 @@ body {
 
     @media screen and (max-width: 768px) {
       border: 1px solid #ED7D31;
+      padding: 0 15px;
+      gap: 45px;
       height: 65px;
       max-width: 300px;
       width: 100%;
@@ -129,16 +131,20 @@ body {
   }
 
   &__button-video-icon {
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-  }
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1px dashed #ED7D31;
+    background-image: url(../images/video-button.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 40px rgba(237, 125, 49, 0.7);
+    background-color: rgba(237, 125, 49, 0.2);
 
-  &__button-video-icon-sm {
-    display: none;
-
     @media screen and (max-width: 768px) {
-      display: inline;
+      width: 35px;
+      height: 35px;
     }
   }
 }

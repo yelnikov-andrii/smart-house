@@ -1,10 +1,15 @@
 .header {
-  padding: 0 60px;
+  padding: 0 0 0 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  background: #132231;
+  background: rgba(13, 13, 14, 0.26);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
 
   @media screen and (max-width: 768px) {
     padding: 0 24px;
@@ -70,10 +75,11 @@
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
   
     &:first-child {
-      border-left: 1px solid white;
-      border-right: 1px solid white;
+      border-left: 1px solid #444;
+      border-right: 1px solid #444;
 
       @media screen and (max-width: 768px) {
         border-left: none;
@@ -83,6 +89,25 @@
     }
 
     &:last-child {
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ED7D31;
+        transition: width 0.3s ease;
+        z-index: -1;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+
       @media screen and (max-width: 768px) {
         display: none;
       }

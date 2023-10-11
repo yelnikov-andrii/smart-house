@@ -92,12 +92,17 @@ ul {
 }
 
 .header {
-  padding: 0 60px;
+  padding: 0 0 0 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  background: #132231;
+  background: rgba(13, 13, 14, 0.26);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -155,10 +160,11 @@ ul {
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
 }
 .header__button:first-child {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
 }
 @media screen and (max-width: 768px) {
   .header__button:first-child {
@@ -166,6 +172,20 @@ ul {
     border-right: none;
     padding: 0;
   }
+}
+.header__button:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ED7D31;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+.header__button:last-child:hover::before {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .header__button:last-child {
@@ -1346,22 +1366,29 @@ body {
 @media screen and (max-width: 768px) {
   .main__button-video {
     border: 1px solid #ED7D31;
+    padding: 0 15px;
+    gap: 45px;
     height: 65px;
     max-width: 300px;
     width: 100%;
   }
 }
+.main__button-video-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px dashed #ED7D31;
+  background-image: url(../images/video-button.svg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 40px rgba(237, 125, 49, 0.7);
+  background-color: rgba(237, 125, 49, 0.2);
+}
 @media screen and (max-width: 768px) {
   .main__button-video-icon {
-    display: none;
-  }
-}
-.main__button-video-icon-sm {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .main__button-video-icon-sm {
-    display: inline;
+    width: 35px;
+    height: 35px;
   }
 }
 
