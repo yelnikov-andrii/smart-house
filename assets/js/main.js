@@ -16,10 +16,16 @@ function handleSubmit(event) {
 
   let usernameInput = document.getElementById("name");
   let cellphoneInput = document.getElementById("phone");
+  let usernameInput1 = document.getElementById("name1");
+  let cellphoneInput1 = document.getElementById("phone1");
 
   console.log(usernameInput.value);
   console.log(cellphoneInput.value);
+  console.log(usernameInput1.value);
+  console.log(cellphoneInput1.value);
 
   usernameInput.value = "";
   cellphoneInput.value = "";
+  usernameInput1.value = "";
+  cellphoneInput1.value = "";
 }
