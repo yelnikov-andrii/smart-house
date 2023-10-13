@@ -1,13 +1,12 @@
 .slider {
   padding: 50px 0;
-  background-color: #181D24;
+  background-color: rgba(24, 29, 36, 0.5);
   height: 800px;
   overflow: hidden;
   min-height: 100vh;
-  background-image: url(../images/bg-clouds.png);
-  background-repeat: no-repeat;
+  background-image: url(../images/bg-clouds.svg);
+  background-repeat: repeat-y;
   background-size: cover;
-  background-position: center top;
 
   &__item {
     background-image: url(../images/swiper-01.png);

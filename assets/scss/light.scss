@@ -1,7 +1,11 @@
 .light {
-  padding: 160px 0;
   background: #24282F;
   min-height: 100vh;
+  background-image: url(../images/bg-clouds.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  padding: 0 0 160px 0;
 
   @media screen and (max-width: 768px) {
     padding: 60px 0 0 0;
@@ -9,6 +13,7 @@
 
   &__h3 {
     margin: 0 0 60px 0;
+    padding: 160px 0 0 0;
     color: #FFF;
     font-family: HeliosExtC;
     font-size: 3.1vw;

@@ -114,6 +114,11 @@ ul {
   align-items: center;
   gap: 90px;
 }
+.header__menu-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
 @media screen and (max-width: 768px) {
   .header__menu-name {
     display: none;
@@ -136,7 +141,7 @@ ul {
 }
 .header__lang-separator {
   color: #5F6565;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
@@ -155,7 +160,6 @@ ul {
   height: 100%;
   padding: 0 30px;
   color: #FFF;
-  font-family: Rubik;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -204,8 +208,8 @@ ul {
 }
 .safety__h2 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 3.2vw;
+  font-family: "HeliosExtC";
+  font-size: 3vw;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -245,9 +249,7 @@ ul {
 }
 .safety__paragraph {
   color: #FFF;
-  font-family: Rubik;
   font-size: 1.2vw;
-  font-style: normal;
   font-weight: 300;
   line-height: 150%;
 }
@@ -280,9 +282,7 @@ ul {
 }
 .safety__link {
   color: #ED7D31;
-  font-family: Rubik;
   font-size: 1.2vw;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
   text-decoration: none;
@@ -297,14 +297,13 @@ ul {
 
 .slider {
   padding: 50px 0;
-  background-color: #181D24;
+  background-color: rgba(24, 29, 36, 0.5);
   height: 800px;
   overflow: hidden;
   min-height: 100vh;
-  background-image: url(../images/bg-clouds.png);
-  background-repeat: no-repeat;
+  background-image: url(../images/bg-clouds.svg);
+  background-repeat: repeat-y;
   background-size: cover;
-  background-position: center top;
 }
 .slider__item {
   background-image: url(../images/swiper-01.png);
@@ -338,13 +337,8 @@ ul {
 }
 
 .energy {
-  padding: 138px 0 200px;
   background: #24282F;
   min-height: 100vh;
-  background-image: url(../images/bg-clouds.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
 }
 @media screen and (max-width: 768px) {
   .energy {
@@ -353,8 +347,8 @@ ul {
 }
 .energy__h3 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 3.1vw;
+  font-family: "HeliosExtC";
+  font-size: 3vw;
   font-weight: 700;
   margin: 0 0 60px 0;
 }
@@ -391,9 +385,7 @@ ul {
 }
 .energy__paragraph {
   color: #FFF;
-  font-family: Rubik;
   font-size: 1.2vw;
-  font-style: normal;
   font-weight: 300;
   line-height: 150%;
   margin: 0 0 60px 0;
@@ -446,7 +438,6 @@ ul {
 .energy__link {
   color: #ED7D31;
   font-size: 1.2vw;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
   text-decoration: none;
@@ -461,9 +452,13 @@ ul {
 }
 
 .light {
-  padding: 160px 0;
   background: #24282F;
   min-height: 100vh;
+  background-image: url(../images/bg-clouds.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  padding: 0 0 160px 0;
 }
 @media screen and (max-width: 768px) {
   .light {
@@ -472,6 +467,7 @@ ul {
 }
 .light__h3 {
   margin: 0 0 60px 0;
+  padding: 160px 0 0 0;
   color: #FFF;
   font-family: HeliosExtC;
   font-size: 3.1vw;
@@ -568,7 +564,6 @@ ul {
 }
 
 .furniture {
-  padding: 138px 0 200px;
   background: #24282F;
   min-height: 100vh;
 }
@@ -579,8 +574,8 @@ ul {
 }
 .furniture__h3 {
   color: #FFF;
-  font-family: HeliosExtC;
-  font-size: 3.1vw;
+  font-family: "HeliosExtC";
+  font-size: 3vw;
   font-weight: 700;
   margin: 0 0 60px 0;
 }
@@ -599,7 +594,7 @@ ul {
   }
 }
 .furniture__description {
-  padding: 120px 80px 20px 80px;
+  padding: 120px 80px 45px 80px;
   width: 50%;
 }
 @media screen and (max-width: 1200px) {
@@ -671,6 +666,8 @@ ul {
 }
 .furniture__link-block {
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 .furniture__link {
   color: #ED7D31;
@@ -689,7 +686,7 @@ ul {
 }
 
 .acoustic {
-  padding: 138px 0 200px;
+  padding: 160px 0 200px;
   background: #24282F;
   min-height: 100vh;
   background-image: url(../images/bg-clouds.png);
@@ -705,7 +702,7 @@ ul {
 .acoustic__h3 {
   color: #FFF;
   font-family: "HeliosExtC";
-  font-size: 3.1vw;
+  font-size: 3vw;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -781,7 +778,7 @@ ul {
 }
 
 .server {
-  padding: 160px 0;
+  padding: 0 0 160px 0;
   background-image: url(../images/server-bg.png);
   background-color: #181D24;
   background-position: center;
@@ -815,7 +812,7 @@ ul {
 .server__h4 {
   color: #FFF;
   font-family: "HeliosExtC";
-  font-size: 3.1vw;
+  font-size: 3vw;
   font-weight: 700;
   margin: 0 0 60px 0;
 }
@@ -896,7 +893,7 @@ ul {
 .commercial__h3 {
   color: #FFF;
   font-family: "HeliosExtC";
-  font-size: 3.1vw;
+  font-size: 3vw;
   font-weight: 700;
   text-align: center;
   margin: 0 0 14px 0;
@@ -1027,7 +1024,7 @@ ul {
 .questions__h3 {
   color: #FFF;
   font-family: "HeliosExtC";
-  font-size: 3.1vw;
+  font-size: 3vw;
   font-weight: 700;
   margin: 0 0 40px 0;
 }
@@ -1104,6 +1101,7 @@ ul {
 .questions__lists {
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 @media screen and (max-width: 768px) {
   .questions__lists {
@@ -1116,7 +1114,7 @@ ul {
   flex-direction: column;
   gap: 15px;
   color: #fff;
-  padding: 0 0 0 40px;
+  padding: 0 40px 0 40px;
 }
 .questions__item {
   color: #FFF;
@@ -1297,11 +1295,9 @@ body {
 .main__h1 {
   text-align: center;
   color: #FFF;
-  font-family: HeliosExtC;
+  font-family: "HeliosExtC";
   font-size: 3vw;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin: 0 0 35px 0;
 }
 @media screen and (max-width: 1024px) {
@@ -1313,9 +1309,7 @@ body {
   margin: 0 auto 35px;
   color: #FFF;
   text-align: center;
-  font-family: Rubik;
   font-size: 1.2vw;
-  font-style: normal;
   font-weight: 300;
   line-height: 150%;
   max-width: 1060px;
@@ -1349,6 +1343,9 @@ body {
   background: #ED7D31;
   box-shadow: 0px 1px 28px 0px rgba(2, 156, 246, 0.1);
   cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
 }
 @media screen and (max-width: 768px) {
   .main__button {
@@ -1361,8 +1358,10 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  color: white;
   cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
 }
 @media screen and (max-width: 768px) {
   .main__button-video {

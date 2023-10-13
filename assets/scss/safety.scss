@@ -9,8 +9,8 @@
 
   &__h2 {
     color: #FFF;
-    font-family: HeliosExtC;
-    font-size: 3.2vw;
+    font-family: 'HeliosExtC';
+    font-size: 3vw;
     font-weight: 700;
     line-height: 150%;
     text-transform: uppercase;
@@ -20,7 +20,6 @@
       font-size: 24px;
       margin: 0 0 45px 0;
     }
-
 
     &--orange {
       color: #ED7D31;
@@ -51,9 +50,7 @@
 
   &__paragraph {
     color: #FFF;
-    font-family: Rubik;
     font-size: 1.2vw;
-    font-style: normal;
     font-weight: 300;
     line-height: 150%;
 
@@ -87,9 +84,7 @@
 
   &__link {
     color: #ED7D31;
-    font-family: Rubik;
     font-size: 1.2vw;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%;
     text-decoration: none;

@@ -22,7 +22,9 @@
   }
 
   &__menu-name {
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -48,7 +50,7 @@
 
   &__lang-separator {
     color: #5F6565;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
   }
@@ -70,7 +72,6 @@
     height: 100%;
     padding: 0 30px;
     color: #FFF;
-    font-family: Rubik;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
