@@ -22,6 +22,12 @@
       }
     }
 
+    @media screen and (max-width: 768px) {
+      &--iframe {
+        min-height: auto;
+      }
+    }
+
     &:first-child {
       padding: 100px 0 80px 80px;
 

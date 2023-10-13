@@ -51,6 +51,10 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 
+  @media screen and (max-width: 768px) {
+    padding: 170px 0 0;
+  }
+
   &__h1 {
     text-align: center;
     color: #FFF;
