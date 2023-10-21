@@ -11,25 +11,23 @@ langUaLink.addEventListener("click", () => {
   langUaLink.classList.add("header__language--active");
 });
 
-function isNumericInput(event) {
-  const inputValue = event.target.value;
-  return !isNaN(inputValue) || inputValue === '+';
-}
-
-function onPhoneInput(event) {
-  if (!isNumericInput(event)) {
-    return;
-  }
-}
-
-function onPhoneInput1(event) {
-  if (!isNumericInput(event)) {
-    return;
-  }
-}
+const phoneInput = document.getElementById("phone");
+const phoneInput1 = document.getElementById("phone1");
 
 document.getElementById("phone").addEventListener("input", onPhoneInput);
 document.getElementById("phone1").addEventListener("input", onPhoneInput1);
+
+function onPhoneInput(event) {
+  const cleanedValue = event.target.value.replace(/[^+\d]/g, '');
+  phoneInput.value = cleanedValue;
+}
+
+function onPhoneInput1(event) {
+  const cleanedValue = event.target.value.replace(/[^+\d]/g, '');
+  phoneInput1.value = cleanedValue;
+}
+
+
 
 function isValidPhoneNumber(phoneNumber) {
   const internationalPhoneRegex = /^\+380\d{9}$/;
