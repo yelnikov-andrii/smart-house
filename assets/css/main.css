@@ -298,7 +298,7 @@ ul {
 
 .slider {
   padding: 50px 0;
-  background-color: rgba(24, 29, 36, 0.5);
+  background: #181D24;
   height: 800px;
   overflow: hidden;
   min-height: 100vh;
@@ -688,7 +688,7 @@ ul {
 
 .acoustic {
   padding: 160px 0 200px;
-  background: #24282F;
+  background-color: #181D24;
   min-height: 100vh;
   background-image: url(../images/bg-clouds.png);
   background-repeat: no-repeat;
@@ -781,7 +781,7 @@ ul {
 .server {
   padding: 0 0 160px 0;
   background-image: url(../images/server-bg.png);
-  background-color: #181D24;
+  background-color: #24282F;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -805,9 +805,15 @@ ul {
 .server__item {
   width: 50%;
 }
+.server__item:first-child {
+  padding: 50px 0 0 0;
+}
 @media screen and (max-width: 768px) {
   .server__item {
     width: 100%;
+  }
+  .server__item:first-child {
+    padding: 0;
   }
 }
 .server__h4 {
