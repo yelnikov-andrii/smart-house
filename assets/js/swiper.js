@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   centeredSlides: true,
-  spaceBetween: 200,
+  spaceBetween: 150,
 
   pagination: {
     el: '.swiper-pagination',

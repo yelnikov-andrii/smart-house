@@ -44,8 +44,8 @@ ul {
   height: 90%;
 }
 .swiper-slide:not(.swiper-slide-active) {
-  height: 60%;
-  margin: auto 0;
+  height: 70%;
+  margin: auto 0 14%;
 }
 .swiper-pagination-bullet {
   background: #ED7D31;
@@ -494,7 +494,6 @@ ul {
 }
 .light__block-item {
   padding: 540px 0 40px 80px;
-  width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -728,6 +727,22 @@ ul {
     flex-direction: column;
   }
 }
+.acoustic__img-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+  z-index: -1;
+}
+.acoustic__img {
+  transition: transform 1s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .acoustic__item {
   padding: 328px 0 40px 80px;
   background: #24282F;
@@ -735,21 +750,21 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.acoustic__item:hover .acoustic__img {
+  transform: scale(1.2);
 }
 @media screen and (max-width: 768px) {
   .acoustic__item {
     width: 100%;
     padding: 255px 0 30px 20px;
   }
-}
-.acoustic__item:nth-child(1) {
-  background-image: url(../images/home-acoustic.png);
-}
-.acoustic__item:nth-child(2) {
-  background-image: url(../images/landscape-acoustic.png);
-}
-.acoustic__item:nth-child(3) {
-  background-image: url(../images/ceil-acoustic.png);
 }
 .acoustic__h4 {
   color: #FFF;
