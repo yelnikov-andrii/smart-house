@@ -341,7 +341,7 @@ ul {
   background: #24282F;
   min-height: 100vh;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .energy {
     padding: 60px 0 0 0;
   }
@@ -364,6 +364,7 @@ ul {
 @media screen and (max-width: 1200px) {
   .energy__block {
     flex-direction: column;
+    align-items: center;
   }
 }
 .energy__description {
@@ -376,13 +377,32 @@ ul {
     width: 100%;
   }
 }
-.energy__image {
+.energy__slider {
   width: 50%;
+  min-height: 735px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 @media screen and (max-width: 1200px) {
-  .energy__image {
+  .energy__slider {
     width: 100%;
   }
+}
+.energy__slider .swiper-container {
+  height: 100%;
+  min-height: 735px;
+}
+.energy .swiper-slide {
+  height: 100%;
+  min-height: 735px;
+  margin: 0;
+}
+.energy__image {
+  width: 100%;
+  height: 100%;
+  min-height: 735px;
+  object-fit: cover;
 }
 .energy__paragraph {
   color: #FFF;

@@ -115,7 +115,7 @@
     </div>
   </section>
   <section class="slider" data-aos="fade-up">
-    <div class="swiper">
+    <div class="swiper-container swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="slider__item">
@@ -240,10 +240,25 @@
         </a>
         </div>
       </div>
-      <img 
-        src="./assets/images/energy-01.png"
-        class="energy__image"
-      />
+      <div class="energy__slider">
+        <div class="swiper-container swiperSmall">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img 
+                src="./assets/images/energy-01.png"
+                class="energy__image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img 
+                src="./assets/images/energy-01.png"
+                class="energy__image"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="light" data-aos="fade-up">
@@ -712,6 +727,8 @@
     </div>
   </footer>
   <script src="./assets/js/swiper.js">
+  </script>
+  <script src="./assets/js/swiper-small.js">
   </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
