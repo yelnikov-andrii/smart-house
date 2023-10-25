@@ -1,8 +1,9 @@
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-  centeredSlides: true,
   spaceBetween: 150,
+  loopedSlides: 2,
+  initialSlide: 1,
 
   pagination: {
     el: '.swiper-pagination',

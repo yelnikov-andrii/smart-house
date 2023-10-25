@@ -125,6 +125,8 @@
 
   &__link-block {
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__link {
@@ -134,11 +136,11 @@
     line-height: 150%;
     text-decoration: none;
     display: flex;
-    justify-content: flex-end;
     gap: 8px;
 
     @media screen and (max-width: 768px) {
       font-size: 14px;
+      justify-content: flex-end;
     }
   }
 }

@@ -302,7 +302,6 @@ ul {
   height: 800px;
   overflow: hidden;
   min-height: 100vh;
-  background-image: url(../images/bg-clouds.svg);
   background-repeat: repeat-y;
   background-size: cover;
 }
@@ -455,6 +454,8 @@ ul {
 }
 .energy__link-block {
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 .energy__link {
   color: #ED7D31;
@@ -463,19 +464,18 @@ ul {
   line-height: 150%;
   text-decoration: none;
   display: flex;
-  justify-content: flex-end;
   gap: 8px;
 }
 @media screen and (max-width: 768px) {
   .energy__link {
     font-size: 14px;
+    justify-content: flex-end;
   }
 }
 
 .light {
   background: #181D24;
   min-height: 100vh;
-  background-image: url(../images/bg-clouds.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;
@@ -706,10 +706,9 @@ ul {
 }
 
 .acoustic {
-  padding: 160px 0 200px;
+  padding: 160px 0 0 0;
   background-color: #181D24;
   min-height: 100vh;
-  background-image: url(../images/bg-clouds.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -814,7 +813,7 @@ ul {
 }
 
 .server {
-  padding: 0 0 160px 0;
+  padding: 160px 80px;
   background-image: url(../images/server-bg.png);
   background-color: #24282F;
   background-position: center;
