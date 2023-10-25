@@ -29,6 +29,9 @@
 
   &__description {
     padding: 120px 80px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 50%;
 
     @media screen and (max-width: 1200px) {
