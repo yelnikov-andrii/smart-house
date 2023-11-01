@@ -98,3 +98,35 @@ let lastScrollTop = 0;
     });
 
     // scrolling header end
+
+    // furniture actions start
+
+    const furnitureListItems = document.getElementsByClassName('furniture__item');
+    const images = document.querySelectorAll('.furniture__img');
+
+    for (let i = 0; i < furnitureListItems.length; i++) {
+      const listItem = furnitureListItems[i];
+      const image = images[i];
+    
+      listItem.onmouseover = () => {
+        setActiveImage(i);
+      };
+    }
+
+    function setActiveImage(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+          image.classList.add('furniture__img--active');
+        } else {
+          image.classList.remove('furniture__img--active');
+        }
+      });
+    }
+
+    const image = document.querySelector('.furniture__img');
+
+       // furniture actions end
+
+
+
+

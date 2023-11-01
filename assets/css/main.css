@@ -635,8 +635,20 @@ ul {
     width: 100%;
   }
 }
-.furniture__img {
+.furniture__imgBlock {
   width: 50%;
+  position: relative;
+}
+.furniture__img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.furniture__img--active {
+  opacity: 1;
 }
 @media screen and (max-width: 1200px) {
   .furniture__img {
@@ -683,6 +695,7 @@ ul {
   font-size: 1.5vw;
   font-weight: 400;
   line-height: 150%;
+  cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
   .furniture__item {
