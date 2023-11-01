@@ -79,15 +79,19 @@ function handleSubmit(event) {
 
 let lastScrollTop = 0;
     const header = document.querySelector(".header");
+    const mainSection = document.querySelector('.main');
 
     window.addEventListener("scroll", () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const mainSectionHeight = mainSection.offsetHeight;
 
       if (scrollTop > lastScrollTop) {
         header.classList.add("header__hidden");
 
       } else {
-        header.classList.remove("header__hidden");
+        if (scrollTop < mainSectionHeight) {
+          header.classList.remove("header__hidden");
+        }
       }
 
       lastScrollTop = scrollTop;

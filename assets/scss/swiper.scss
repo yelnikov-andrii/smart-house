@@ -5,12 +5,14 @@
   max-width: 992px;
 
   &-slide {
-    height: 90%;
+    max-height: 90%;
+    transition: all 2s ease;
 
-    &:not(.swiper-slide-active) {
-      height: 70%;
-      margin: auto 0 14%;
-    }
+  &:not(.swiper-slide-active) {
+    max-height: 70%;
+    height: 70%;
+    margin: auto 0 14%;
+  }
   }
 
   &-pagination {
