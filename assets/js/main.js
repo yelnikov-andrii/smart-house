@@ -1,3 +1,5 @@
+// languages changing 
+
 const langEnLink = document.getElementById("lang-en");
 const langUaLink = document.getElementById("lang-ua");
 
@@ -10,6 +12,10 @@ langUaLink.addEventListener("click", () => {
   langEnLink.classList.remove("header__language--active");
   langUaLink.classList.add("header__language--active");
 });
+
+// language changing end
+
+// form action
 
 const phoneInput = document.getElementById("phone");
 const phoneInput1 = document.getElementById("phone1");
@@ -27,7 +33,7 @@ function onPhoneInput1(event) {
   phoneInput1.value = cleanedValue;
 }
 
-
+// vaidation phone number
 
 function isValidPhoneNumber(phoneNumber) {
   const internationalPhoneRegex = /^\+380\d{9}$/;
@@ -36,6 +42,8 @@ function isValidPhoneNumber(phoneNumber) {
 
   return internationalPhoneRegex.test(phoneNumber) || localPhoneRegex.test(phoneNumber);
 }
+
+// vaidation phone number end
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -64,3 +72,25 @@ function handleSubmit(event) {
   usernameInput1.value = "";
   cellphoneInput1.value = "";
 }
+
+// form action end
+
+// scrolling header start
+
+let lastScrollTop = 0;
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        header.classList.add("header__hidden");
+
+      } else {
+        header.classList.remove("header__hidden");
+      }
+
+      lastScrollTop = scrollTop;
+    });
+
+    // scrolling header end

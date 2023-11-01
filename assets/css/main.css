@@ -97,12 +97,16 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  background: rgba(13, 13, 14, 0.26);
+  background: rgba(126, 126, 161, 0.26);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 4;
+  transition: all 0.4s ease;
+}
+.header__hidden {
+  top: -75px;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -1318,7 +1322,7 @@ ul {
 }
 
 body {
-  background-color: #181D24;
+  background-color: #24282F;
 }
 
 .container {
