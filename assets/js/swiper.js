@@ -1,18 +1,31 @@
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 150,
+  // spaceBetween: 150,
   loopedSlides: 2,
   initialSlide: 1,
-  speed: 1600,
+  speed: 2600,
 
   pagination: {
     el: '.swiper-pagination',
   },
 });
 
-const nextButton = document.querySelector('.swiper-button-next');
-const prevButton = document.querySelector('.swiper-button-prev');
+const thumbsSwiper = new Swiper('.thumbs-swiper', {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 150,
+  loopedSlides: 2,
+  initialSlide: 1,
+  speed: 2600,
+  linkedSwiper: swiper,
+});
+
+swiper.controller.control = thumbsSwiper;
+thumbsSwiper.controller.control = swiper;
+
+const nextButton = document.querySelector('.slider__rightBlock');
+const prevButton = document.querySelector('.slider__leftBlock');
 
 nextButton.addEventListener('click', (e) => {
   nextButton.disabled = true;
