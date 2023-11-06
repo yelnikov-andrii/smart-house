@@ -699,6 +699,13 @@ ul {
 .furniture__imgBlock {
   width: 50%;
   position: relative;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .furniture__imgBlock {
+    height: 50vh;
+    width: 100%;
+  }
 }
 .furniture__img {
   width: 100%;
@@ -933,7 +940,7 @@ ul {
     width: 100%;
   }
   .server__item:first-child {
-    padding: 0;
+    padding: 0 10px;
   }
 }
 .server__h4 {
@@ -1015,7 +1022,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .commercial {
-    padding: 60px 0 0 0;
+    padding: 60px 0 60px 0;
   }
 }
 .commercial__h3 {
