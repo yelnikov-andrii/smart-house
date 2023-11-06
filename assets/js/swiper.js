@@ -1,10 +1,17 @@
+let initialSpeed = 2600;
+
+if (window.innerWidth <= 768) {
+  initialSpeed = 600;
+}
+
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   // spaceBetween: 150,
   loopedSlides: 2,
   initialSlide: 1,
-  speed: 2600,
+  speed: initialSpeed,
+  touch: true,
 
   pagination: {
     el: '.swiper-pagination',

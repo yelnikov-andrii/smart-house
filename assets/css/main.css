@@ -346,6 +346,11 @@ ul {
   z-index: 10;
   cursor: url("../images/left-arrow-slider.svg"), auto;
 }
+@media screen and (max-width: 768px) {
+  .slider__leftBlock {
+    display: none;
+  }
+}
 .slider__rightBlock {
   position: absolute;
   right: 0;
@@ -354,6 +359,11 @@ ul {
   left: 50%;
   z-index: 10;
   cursor: url("../images/right-arrow-slider.svg"), auto;
+}
+@media screen and (max-width: 768px) {
+  .slider__rightBlock {
+    display: none;
+  }
 }
 .slider__item {
   width: 100%;

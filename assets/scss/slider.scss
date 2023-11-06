@@ -16,6 +16,10 @@
     right: 50%;
     z-index: 10;
     cursor: url('../images/left-arrow-slider.svg'), auto;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__rightBlock {
@@ -26,6 +30,10 @@
     left: 50%;
     z-index: 10;
     cursor: url('../images/right-arrow-slider.svg'), auto;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__item {
