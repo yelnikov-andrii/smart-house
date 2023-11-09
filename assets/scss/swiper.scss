@@ -24,12 +24,19 @@
   }
 
   &-button {
+    z-index: 4;
+    position: relative;
+
     &-next {
-      right: -94px;
+      right: 10%;
       border: 1px solid #fff;
       border-radius: 50%;
       width: 52px;
       height: 52px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
 
       &::after {
         background-image: url(../images/arrow-slider.svg);
@@ -47,11 +54,15 @@
     }
 
     &-prev {
-      left: -94px;
+      left: 10%;
       border: 1px solid #fff;
       border-radius: 50%;
       width: 52px;
       height: 52px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
 
       &::after {
         background-image: url(../images/arrow-slider.svg);

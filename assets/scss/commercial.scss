@@ -5,6 +5,9 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     padding: 60px 0 60px 0;
@@ -93,9 +96,15 @@
     padding: 22px 0 22px 46px;
     width: 100%;
     color: #fff;
+    max-width: 305px;
+    font-weight: 300;
+
+    &--phone {
+      font-weight: 400;
+    }
 
     &::placeholder {
-      color: #fff;
+      color: #6C6D70;
     }
   }
 
@@ -107,6 +116,7 @@
     font-weight: 400;
     width: calc((100% / 3) - 16px);
     height: 65px;
+    max-width: 235px;
 
     @media screen and (max-width: 768px) {
       width: 100%;

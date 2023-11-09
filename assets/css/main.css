@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@300;400&display=swap");
 @font-face {
   font-family: "HeliosExtC";
@@ -54,12 +55,21 @@ ul {
 .swiper-pagination-bullet {
   background: #ED7D31;
 }
+.swiper-button {
+  z-index: 4;
+  position: relative;
+}
 .swiper-button-next {
-  right: -94px;
+  right: 10%;
   border: 1px solid #fff;
   border-radius: 50%;
   width: 52px;
   height: 52px;
+}
+@media screen and (max-width: 768px) {
+  .swiper-button-next {
+    display: none;
+  }
 }
 .swiper-button-next::after {
   background-image: url(../images/arrow-slider.svg);
@@ -75,11 +85,16 @@ ul {
   position: absolute;
 }
 .swiper-button-prev {
-  left: -94px;
+  left: 10%;
   border: 1px solid #fff;
   border-radius: 50%;
   width: 52px;
   height: 52px;
+}
+@media screen and (max-width: 768px) {
+  .swiper-button-prev {
+    display: none;
+  }
 }
 .swiper-button-prev::after {
   background-image: url(../images/arrow-slider.svg);
@@ -124,7 +139,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  background: rgba(126, 126, 161, 0.26);
+  background: #30353D;
   position: fixed;
   top: 0;
   left: 0;
@@ -337,34 +352,6 @@ ul {
   background-repeat: repeat-y;
   background-size: cover;
 }
-.slider__leftBlock {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 50%;
-  z-index: 10;
-  cursor: url("../images/left-arrow-slider.svg"), auto;
-}
-@media screen and (max-width: 768px) {
-  .slider__leftBlock {
-    display: none;
-  }
-}
-.slider__rightBlock {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  z-index: 10;
-  cursor: url("../images/right-arrow-slider.svg"), auto;
-}
-@media screen and (max-width: 768px) {
-  .slider__rightBlock {
-    display: none;
-  }
-}
 .slider__item {
   width: 100%;
   height: 100%;
@@ -448,30 +435,29 @@ ul {
 }
 .energy__slider {
   width: 50%;
-  min-height: 735px;
-  height: 100%;
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 @media screen and (max-width: 1200px) {
   .energy__slider {
     width: 100%;
   }
 }
-.energy__slider .swiper-container {
-  height: 100%;
-  min-height: 735px;
-}
 .energy .swiper-slide {
-  height: 100%;
   min-height: 735px;
   margin: 0;
+  height: 100%;
+  display: flex;
+}
+.energy .swiper-wrapper {
+  height: 100%;
 }
 .energy__image {
   width: 100%;
   height: 100%;
-  min-height: 735px;
-  object-fit: cover;
+  object-fit: cover; /* Добавьте это свойство */
+  min-height: 0;
 }
 .energy__paragraph {
   color: #FFF;
@@ -689,6 +675,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 100%;
 }
 @media screen and (max-width: 1200px) {
   .furniture__description {
@@ -699,7 +686,6 @@ ul {
 .furniture__imgBlock {
   width: 50%;
   position: relative;
-  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .furniture__imgBlock {
@@ -714,6 +700,7 @@ ul {
   left: 0;
   opacity: 0;
   transition: opacity 1s;
+  height: 100%;
 }
 .furniture__img--active {
   opacity: 1;
@@ -971,6 +958,7 @@ ul {
   font-weight: 300;
   line-height: 150%;
   margin: 0 0 60px 0;
+  padding: 0 40px 0 0;
 }
 @media screen and (max-width: 768px) {
   .server__paragraph {
@@ -981,6 +969,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 45px;
+  padding: 0 40px 0 0;
 }
 @media screen and (max-width: 768px) {
   .server__list {
@@ -1019,6 +1008,9 @@ ul {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .commercial {
@@ -1102,9 +1094,14 @@ ul {
   padding: 22px 0 22px 46px;
   width: 100%;
   color: #fff;
+  max-width: 305px;
+  font-weight: 300;
+}
+.commercial__input--phone {
+  font-weight: 400;
 }
 .commercial__input::placeholder {
-  color: #fff;
+  color: #6C6D70;
 }
 .commercial__button {
   background: #ED7D31;
@@ -1114,6 +1111,7 @@ ul {
   font-weight: 400;
   width: calc(33.3333333333% - 16px);
   height: 65px;
+  max-width: 235px;
 }
 @media screen and (max-width: 768px) {
   .commercial__button {
@@ -1167,6 +1165,7 @@ ul {
   font-size: 3vw;
   font-weight: 700;
   margin: 0 0 40px 0;
+  padding: 0 60px 0 0;
 }
 @media screen and (max-width: 768px) {
   .questions__h3 {
@@ -1179,6 +1178,7 @@ ul {
   font-weight: 300;
   line-height: 150%;
   margin: 0 0 40px 0;
+  padding: 0 60px 0 0;
 }
 @media screen and (max-width: 768px) {
   .questions__paragraph {
@@ -1224,9 +1224,11 @@ ul {
   padding: 22px 0 22px 46px;
   color: #fff;
   width: 100%;
+  max-width: 409px;
+  font-weight: 300;
 }
 .questions__input::placeholder {
-  color: #fff;
+  color: #6C6D70;
 }
 .questions__button {
   background: #ED7D31;
@@ -1303,7 +1305,7 @@ ul {
 .footer {
   border: 1px solid #3B424B;
   background: #30353D;
-  padding: 13px 0 16px;
+  padding: 13px 80px 16px;
 }
 .footer__logo {
   width: 53px;
@@ -1430,6 +1432,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .main {

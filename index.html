@@ -132,8 +132,6 @@
     </div>
   </section>
   <section class="slider">
-    <div class="slider__leftBlock"></div>
-    <div class="slider__rightBlock"></div>
     <div class="swiper-container swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -227,6 +225,8 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     <div class="swiper-container thumbs-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -553,7 +553,7 @@
       Акустические системы
     </h3>
     <div class="acoustic__block">
-      <div class="acoustic__item">
+      <a class="acoustic__item" href="#">
         <div class="acoustic__img-wrapper">
           <img 
             src="./assets/images/home-acoustic.png"
@@ -563,17 +563,16 @@
         <h4 class="acoustic__h4" data-aos="fade-up" data-aos-duration="1000">
           Домашня акустика
         </h4>
-        <a 
-          href="#"
+        <div 
           class="acoustic__link"
         >
           Дізнатись більше
             <img 
               src="./assets/images/arrow-white.svg"
             />
-        </a>
       </div>
-      <div class="acoustic__item">
+      </a>
+      <a class="acoustic__item" href="#">
         <div class="acoustic__img-wrapper">
           <img 
             src="./assets/images/landscape-acoustic.png"
@@ -583,17 +582,16 @@
         <h4 class="acoustic__h4" data-aos="fade-up" data-aos-duration="1000">
           Ландшафтна акустика
         </h4>
-        <a 
-          href="#"
+        <div
           class="acoustic__link"
         >
           Дізнатись більше
           <img 
             src="./assets/images/arrow-white.svg"
           />
-        </a>
       </div>
-      <div class="acoustic__item">
+      </a>
+      <a class="acoustic__item" href="#">
         <div class="acoustic__img-wrapper">
           <img 
             src="./assets/images/ceil-acoustic.png"
@@ -603,16 +601,15 @@
         <h4 class="acoustic__h4" data-aos="fade-up" data-aos-duration="1000">
           Стельова акустика
         </h4>
-        <a 
-          href="#"
+        <div
           class="acoustic__link"
         >
           Дізнатись більше
           <img 
             src="./assets/images/arrow-white.svg"
           />
-        </a>
       </div>
+      </a>
     </div>
   </section>
   <section class="server" data-aos="fade-up">
@@ -697,7 +694,7 @@
         >
           <input 
             placeholder="Введіть номер телефону"
-            class="commercial__input"
+            class="commercial__input commercial__input--phone"
             type="text"
             id="phone"
             inputmode="numeric"
@@ -831,7 +828,6 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="container">
       <div class="footer__block">
         <img 
           src="./assets/images/logo.png"
@@ -840,37 +836,36 @@
         <nav class="footer__nav">
           <a
             href="#"
-            data-aos="fade-up" data-aos-duration="1000"
           >
             Головна
           </a>
           <a
             href="#"
-            data-aos="fade-up" data-aos-duration="1000"
+            
           >
             Навігація 1
           </a>
           <a
             href="#"
-            data-aos="fade-up" data-aos-duration="1000"
+            
           >
             Навігація 2
           </a>
           <a
             href="#"
-            data-aos="fade-up" data-aos-duration="1000"
+            
           >
             Навігація 3
           </a>
           <a
             href="#"
-            data-aos="fade-up" data-aos-duration="1000"
+            
           >
             Навігація 4
           </a>
           <a
             href="#"
-            data-aos="fade-up" data-aos-duration="1000"
+            
           >
             Навігація 5
           </a>
@@ -880,7 +875,7 @@
             <a
               href="https://instagram.com"
               target="_blank"
-              data-aos="fade-up" data-aos-duration="1000"
+              
             >
               <img 
                 src="./assets/images/instagram.svg"
@@ -889,7 +884,7 @@
             <a
               href="https://facebook.com"
               target="_blank"
-              data-aos="fade-up" data-aos-duration="1000"
+              
             >
               <img 
                 src="./assets/images/facebook.svg"
@@ -899,7 +894,7 @@
           <nav class="footer__phones">
             <a 
               href="tel:+38 093 820 02 81"
-              data-aos="fade-up" data-aos-duration="1000"
+              
             >
               <img 
                 src="./assets/images/phone-icon.svg"
@@ -908,7 +903,7 @@
             </a>
             <a
               href="tel:+44 07 5333 38239"
-              data-aos="fade-up" data-aos-duration="1000"
+              
             >
               <img
                 src="./assets/images/phone-icon.svg"
@@ -921,7 +916,7 @@
       <div class="footer__separator">
       </div>
       <div class="footer__block">
-        <p class="footer__rights" data-aos="fade-up" data-aos-duration="1000">
+        <p class="footer__rights" >
           © 2023. All rights reserved.
         </p>
         <nav class="footer__privacy-nav">
@@ -930,7 +925,6 @@
           <a class="footer__privacy-link">Terms And Conditions</a>
         </nav>
       </div>
-    </div>
   </footer>
   <script src="./assets/js/swiper.js">
   </script>

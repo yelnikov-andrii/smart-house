@@ -7,7 +7,7 @@ if (window.innerWidth <= 768) {
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-  // spaceBetween: 150,
+  spaceBetween: 150,
   loopedSlides: 2,
   initialSlide: 1,
   speed: initialSpeed,
@@ -15,6 +15,11 @@ const swiper = new Swiper('.swiper', {
 
   pagination: {
     el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 

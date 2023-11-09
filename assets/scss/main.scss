@@ -50,6 +50,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     padding: 170px 0 0;
