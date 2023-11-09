@@ -57,6 +57,10 @@
       margin: 0;
       height: 100%;
       display: flex;
+
+      @media screen and (max-width: 1200px) {
+        min-height: unset;
+      }
     }
 
     &-wrapper {

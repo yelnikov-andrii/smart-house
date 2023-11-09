@@ -42,6 +42,33 @@ ul {
   max-width: 992px;
   z-index: 9;
 }
+@media screen and (max-width: 1400px) {
+  .swiper {
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .swiper {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper {
+    height: 100vh;
+    max-width: 425px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .swiper {
+    height: 100vh;
+    max-width: 260px;
+  }
+}
 .swiper-slide {
   max-height: 90%;
   transition: all 2s ease;
@@ -66,6 +93,12 @@ ul {
   width: 52px;
   height: 52px;
 }
+@media screen and (max-width: 1024px) {
+  .swiper-button-next {
+    width: 32px;
+    height: 32px;
+  }
+}
 @media screen and (max-width: 768px) {
   .swiper-button-next {
     display: none;
@@ -84,12 +117,24 @@ ul {
   transform: translate(-50%, -50%);
   position: absolute;
 }
+@media screen and (max-width: 1024px) {
+  .swiper-button-next::after {
+    width: 7px;
+    height: 12px;
+  }
+}
 .swiper-button-prev {
   left: 10%;
   border: 1px solid #fff;
   border-radius: 50%;
   width: 52px;
   height: 52px;
+}
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev {
+    width: 32px;
+    height: 32px;
+  }
 }
 @media screen and (max-width: 768px) {
   .swiper-button-prev {
@@ -109,6 +154,12 @@ ul {
   transform: translate(-50%, -50%) rotate(-180deg);
   position: absolute;
 }
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev::after {
+    width: 7px;
+    height: 12px;
+  }
+}
 
 .thumbs-swiper {
   position: absolute;
@@ -120,7 +171,34 @@ ul {
   z-index: 8;
   height: 700px;
   max-width: 992px;
-  opacity: 0.2;
+  opacity: 0.3;
+}
+@media screen and (max-width: 1400px) {
+  .thumbs-swiper {
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .thumbs-swiper {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .thumbs-swiper {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .thumbs-swiper {
+    height: 100vh;
+    max-width: 425px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .thumbs-swiper {
+    height: 100vh;
+    max-width: 260px;
+  }
 }
 .thumbs-swiper-slide {
   max-height: 90%;
@@ -352,6 +430,11 @@ ul {
   background-repeat: repeat-y;
   background-size: cover;
 }
+@media screen and (max-width: 768px) {
+  .slider {
+    height: auto;
+  }
+}
 .slider__item {
   width: 100%;
   height: 100%;
@@ -367,12 +450,20 @@ ul {
   right: 0;
   bottom: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .slider__txt-block {
   background: #24282F;
   padding: 40px 40px 20px 40px;
   position: relative;
   z-index: 11;
+}
+@media screen and (max-width: 768px) {
+  .slider__txt-block {
+    width: 100%;
+    height: 30vh;
+  }
 }
 .slider__h5 {
   color: #FFF;
@@ -449,6 +540,11 @@ ul {
   margin: 0;
   height: 100%;
   display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .energy .swiper-slide {
+    min-height: unset;
+  }
 }
 .energy .swiper-wrapper {
   height: 100%;
@@ -687,9 +783,8 @@ ul {
   width: 50%;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .furniture__imgBlock {
-    height: 50vh;
     width: 100%;
   }
 }
@@ -701,12 +796,14 @@ ul {
   opacity: 0;
   transition: opacity 1s;
   height: 100%;
+  object-fit: cover;
 }
 .furniture__img--active {
   opacity: 1;
 }
 @media screen and (max-width: 1200px) {
   .furniture__img {
+    height: 50vh;
     width: 100%;
   }
 }
@@ -925,6 +1022,7 @@ ul {
 @media screen and (max-width: 768px) {
   .server__item {
     width: 100%;
+    height: 50vh;
   }
   .server__item:first-child {
     padding: 0 10px;
@@ -1000,6 +1098,11 @@ ul {
 .server__img {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .server__img {
+    height: 100%;
+  }
+}
 
 .commercial {
   padding: 118px 0;
@@ -1055,6 +1158,7 @@ ul {
 @media screen and (max-width: 768px) {
   .commercial__form {
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 }
@@ -1065,6 +1169,7 @@ ul {
 @media screen and (max-width: 768px) {
   .commercial__input-wrapper {
     width: 100%;
+    max-width: 335px;
   }
 }
 .commercial__input-wrapper--username::before {
@@ -1097,6 +1202,12 @@ ul {
   max-width: 305px;
   font-weight: 300;
 }
+@media screen and (max-width: 768px) {
+  .commercial__input {
+    max-width: 335px;
+    width: 100%;
+  }
+}
 .commercial__input--phone {
   font-weight: 400;
 }
@@ -1116,6 +1227,7 @@ ul {
 @media screen and (max-width: 768px) {
   .commercial__button {
     width: 100%;
+    max-width: 335px;
   }
 }
 

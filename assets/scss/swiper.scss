@@ -5,6 +5,28 @@
   max-width: 992px;
   z-index: 9;
 
+  @media screen and (max-width: 1400px) {
+    max-width: 750px;
+  }
+
+  @media screen and (max-width: 1220px) {
+    max-width: 650px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+    max-width: 425px;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 100vh;
+    max-width: 260px;
+  }
+
   &-slide {
     max-height: 90%;
     transition: all 2s ease;
@@ -34,6 +56,11 @@
       width: 52px;
       height: 52px;
 
+      @media screen and (max-width: 1024px) {
+        width: 32px;
+        height: 32px;
+      }
+
       @media screen and (max-width: 768px) {
         display: none;
       }
@@ -50,6 +77,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
+
+        @media screen and (max-width: 1024px) {
+          width: 7px;
+          height: 12px;
+        }
       }
     }
 
@@ -59,6 +91,11 @@
       border-radius: 50%;
       width: 52px;
       height: 52px;
+
+      @media screen and (max-width: 1024px) {
+        width: 32px;
+        height: 32px;
+      }
 
       @media screen and (max-width: 768px) {
         display: none;
@@ -76,6 +113,11 @@
         left: 50%;
         transform: translate(-50%, -50%) rotate(-180deg);
         position: absolute;
+
+        @media screen and (max-width: 1024px) {
+          width: 7px;
+          height: 12px;
+        }
       }
     }
   }
@@ -91,7 +133,29 @@
   z-index: 8;
   height: 700px;
   max-width: 992px;
-  opacity: 0.2;
+  opacity: 0.3;
+
+  @media screen and (max-width: 1400px) {
+    max-width: 750px;
+  }
+
+  @media screen and (max-width: 1220px) {
+    max-width: 650px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+    max-width: 425px;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 100vh;
+    max-width: 260px;
+  }
 
   &-slide {
     max-height: 90%;
