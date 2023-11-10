@@ -43,15 +43,18 @@ body {
 }
 
 .main {
-  padding: 200px 0 450px;
   background-image: url(../images/main-bg.png);
   background-color: #181D24;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
+
+  .container {
+    transform: translateY(75px);
+  }
 
   @media screen and (max-width: 768px) {
     padding: 170px 0 0;

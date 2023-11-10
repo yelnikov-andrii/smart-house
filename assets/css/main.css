@@ -217,7 +217,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  background: #30353D;
+  background: #283345;
   position: fixed;
   top: 0;
   left: 0;
@@ -231,7 +231,7 @@ ul {
 @media screen and (max-width: 768px) {
   .header {
     padding: 0 24px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #424d5f;
   }
 }
 .header__menu-block {
@@ -265,7 +265,7 @@ ul {
   color: #FFF;
 }
 .header__lang-separator {
-  color: #5F6565;
+  color: #424d5f;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -301,6 +301,20 @@ ul {
     border-right: none;
     padding: 0;
   }
+}
+.header__button:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ED7D31;
+  transition: width 0.6s ease;
+  z-index: -1;
+}
+.header__button:first-child:hover::before {
+  width: 100%;
 }
 .header__button:last-child::before {
   content: "";
@@ -1537,15 +1551,17 @@ body {
 }
 
 .main {
-  padding: 200px 0 450px;
   background-image: url(../images/main-bg.png);
   background-color: #181D24;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
+}
+.main .container {
+  transform: translateY(75px);
 }
 @media screen and (max-width: 768px) {
   .main {

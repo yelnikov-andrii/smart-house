@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  background: #30353D;
+  background: #283345;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
 
   @media screen and (max-width: 768px) {
     padding: 0 24px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #424d5f;
   }
 
   &__menu-block {
@@ -55,7 +55,7 @@
   }
 
   &__lang-separator {
-    color: #5F6565;
+    color: #424d5f;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -92,6 +92,24 @@
         border-left: none;
         border-right: none;
         padding: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ED7D31;
+        transition: width 0.6s ease;
+        z-index: -1;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
       }
     }
 
