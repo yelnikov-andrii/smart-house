@@ -1,8 +1,10 @@
-let initialSpeed = 2600;
+let initialSpeed = 1000;
 
 if (window.innerWidth <= 768) {
   initialSpeed = 600;
 }
+
+console.log(initialSpeed);
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
