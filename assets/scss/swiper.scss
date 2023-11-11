@@ -23,7 +23,7 @@
   }
 
   @media screen and (max-width: 425px) {
-    height: 100vh;
+    height: 80vh;
     max-width: 260px;
   }
 
@@ -148,25 +148,20 @@
   }
 
   @media screen and (max-width: 768px) {
-    height: 100vh;
+    height: 90vh;
     max-width: 425px;
   }
 
   @media screen and (max-width: 425px) {
-    height: 100vh;
+    height: 80vh;
     max-width: 260px;
   }
 
   &-slide {
-    max-height: 90%;
-    transition: all 2s ease;
-    overflow: hidden;
-
-  &:not(.swiper-slide-active) {
     max-height: 70%;
     height: 70%;
-    margin: auto 0 14%;
-  }
+    transition: all 2s ease;
+    overflow: hidden;
   }
 }
 
