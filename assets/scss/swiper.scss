@@ -29,7 +29,7 @@
 
   &-slide {
     max-height: 90%;
-    transition: all 1s ease;
+    transition: max-height 1s ease;
     overflow: hidden;
 
     @media screen and (max-width: 768px) {
@@ -38,7 +38,7 @@
 
   &:not(.swiper-slide-active) {
     max-height: 70%;
-    height: 70%;
+    height: 100%;
     margin: auto 0 14%;
   }
   }
@@ -166,11 +166,6 @@
     height: 70%;
     transition: all 2s ease;
     overflow: hidden;
-  }
-
-  &:not(.thumbs-swiper-slide-active) {
-    max-height: 70%;
-    height: 70%;
   }
 }
 
