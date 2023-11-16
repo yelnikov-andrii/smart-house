@@ -1057,7 +1057,13 @@ ul {
 @media screen and (max-width: 768px) {
   .server__block {
     flex-direction: column;
+    align-items: center;
     gap: 45px;
+  }
+  .server__block:last-child .server__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .server__item {
@@ -1069,7 +1075,6 @@ ul {
 @media screen and (max-width: 768px) {
   .server__item {
     width: 100%;
-    height: 50vh;
   }
   .server__item:first-child {
     padding: 0 10px;
@@ -1148,6 +1153,7 @@ ul {
 @media screen and (max-width: 768px) {
   .server__img {
     height: 100%;
+    max-width: 527px;
   }
 }
 
