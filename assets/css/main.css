@@ -551,6 +551,11 @@ ul {
     width: 80%;
   }
 }
+@media screen and (max-width: 425px) {
+  .energy__description {
+    width: 100%;
+  }
+}
 .energy__slider {
   width: 50%;
   overflow: hidden;
@@ -560,6 +565,11 @@ ul {
 @media screen and (max-width: 768px) {
   .energy__slider {
     width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .energy__slider {
+    width: 100%;
   }
 }
 .energy .swiper-slide {
