@@ -21,9 +21,11 @@
 
   &__block {
     display: flex;
+    height: 100%;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
+      height: auto;
     }
   }
 
@@ -68,12 +70,13 @@
 
   &__img {
     width: 100%;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: opacity 1s;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 
     &--active {

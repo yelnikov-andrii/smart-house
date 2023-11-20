@@ -801,10 +801,12 @@ ul {
 }
 .furniture__block {
   display: flex;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .furniture__block {
     flex-direction: column;
+    height: auto;
   }
 }
 .furniture__description {
@@ -851,12 +853,13 @@ ul {
 }
 .furniture__img {
   width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   transition: opacity 1s;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 .furniture__img--active {
