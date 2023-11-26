@@ -4,12 +4,16 @@ if (window.innerWidth <= 768) {
   initialSpeed = 600;
 }
 
-console.log(initialSpeed);
+let spaceBetweenValue = 150;
+
+if (window.innerWidth < 425) {
+  spaceBetweenValue = 20;
+}
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 150,
+  spaceBetween: spaceBetweenValue,
   loopedSlides: 2,
   initialSlide: 1,
   speed: initialSpeed,
@@ -28,12 +32,13 @@ const swiper = new Swiper('.swiper', {
 const thumbsSwiper = new Swiper('.thumbs-swiper', {
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 150,
+  spaceBetween: spaceBetweenValue,
   loopedSlides: 2,
   initialSlide: 1,
   speed: 2600,
   linkedSwiper: swiper,
 });
+
 
 swiper.controller.control = thumbsSwiper;
 thumbsSwiper.controller.control = swiper;

@@ -36,10 +36,19 @@
       transition: all 0.6s ease;
     }
 
+    @media screen and (max-width: 425px) {
+      max-height: unset;
+    }
+
   &:not(.swiper-slide-active) {
     max-height: 70%;
     height: 100%;
     margin: auto 0 14%;
+
+    @media screen and (max-width: 425px) {
+      max-height: unset;
+      margin: 0;
+    }
   }
   }
 
@@ -166,6 +175,11 @@
     height: 70%;
     transition: all 2s ease;
     overflow: hidden;
+
+    @media screen and (max-width: 425px) {
+      max-height: unset;
+      height: 100%;
+    }
   }
 }
 
