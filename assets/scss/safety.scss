@@ -36,8 +36,19 @@
     }
   }
 
+  &__img {
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+
   &__description {
     padding: 50px 10px 40px 0;
+
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+    }
 
     @media screen and (max-width: 768px) {
       padding: 0 15px;

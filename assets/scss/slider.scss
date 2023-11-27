@@ -1,12 +1,39 @@
 .slider {
   padding: 50px 0;
-  background: #181D24;
   position: relative;
   height: 800px;
   overflow: hidden;
-  min-height: 100vh;
   background-repeat: repeat-y;
   background-size: cover;
+
+  &__wrapper {
+    min-height: 100vh;
+    background: #181D24;
+
+    @media screen and (min-width: 1440px) {
+      min-height: unset;
+    }
+  }
+
+  &__h2 {
+    margin: 0 0 60px 0;
+    color: #FFF;
+    font-family: HeliosExtC;
+    font-size: 3.1vw;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 24px;
+      margin: 0 0 40px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     height: auto;
