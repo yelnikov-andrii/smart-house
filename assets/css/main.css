@@ -873,10 +873,16 @@ ul {
 }
 .furniture__block {
   display: flex;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .furniture__block {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .furniture__block {
+    min-height: 100vh;
   }
 }
 .furniture__description {
@@ -908,6 +914,8 @@ ul {
 .furniture__imgBlock {
   width: 50%;
   position: relative;
+  height: 100%;
+  min-height: 100vh;
 }
 @media screen and (max-width: 768px) {
   .furniture__imgBlock {
@@ -930,6 +938,11 @@ ul {
   transition: opacity 1s;
   height: auto;
   object-fit: cover;
+}
+@media screen and (min-width: 1440px) {
+  .furniture__img {
+    height: 100%;
+  }
 }
 .furniture__img--active {
   opacity: 1;
