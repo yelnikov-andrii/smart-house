@@ -541,7 +541,6 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .slider__txt-block {
-    height: 20vh;
     width: 100%;
   }
 }
@@ -601,7 +600,7 @@ ul {
 }
 @media screen and (min-width: 1440px) {
   .energy__block {
-    min-height: 100vh;
+    height: 100%;
   }
 }
 .energy__description {
