@@ -575,6 +575,11 @@ ul {
     padding: 96px 0 0 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .energy {
+    padding: 60px 0 0 0;
+  }
+}
 .energy__h3 {
   color: #FFF;
   font-family: "HeliosExtC";
@@ -582,10 +587,29 @@ ul {
   font-weight: 700;
   margin: 0 0 60px 0;
 }
+@media screen and (max-width: 768px) {
+  .energy__h3 {
+    display: none;
+  }
+}
 @media screen and (max-width: 1024px) {
   .energy__h3 {
     font-size: 24px;
     margin: 0 0 45px 0;
+  }
+}
+.energy__H3mobile {
+  display: none;
+  color: #FFF;
+  font-family: "HeliosExtC";
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 60px 0;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  .energy__H3mobile {
+    display: block;
   }
 }
 .energy__block {
@@ -865,10 +889,29 @@ ul {
   font-weight: 700;
   margin: 0 0 60px 0;
 }
+@media screen and (max-width: 768px) {
+  .furniture__h3 {
+    display: none;
+  }
+}
 @media screen and (max-width: 1024px) {
   .furniture__h3 {
-    margin: 0 0 30px 0;
     font-size: 24px;
+    margin: 0 0 30px 0;
+  }
+}
+.furniture__H3mobile {
+  display: none;
+  color: #FFF;
+  font-family: "HeliosExtC";
+  font-size: 24px;
+  font-weight: 700;
+  margin: 60px 0;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  .furniture__H3mobile {
+    display: block;
   }
 }
 .furniture__block {
