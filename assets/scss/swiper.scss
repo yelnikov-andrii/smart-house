@@ -173,7 +173,7 @@
   &-slide {
     max-height: 70%;
     height: 70%;
-    transition: all 2s ease;
+    transition: max-height 1s ease;
     overflow: hidden;
 
     @media screen and (max-width: 425px) {

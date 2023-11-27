@@ -218,7 +218,7 @@ ul {
 .thumbs-swiper-slide {
   max-height: 70%;
   height: 70%;
-  transition: all 2s ease;
+  transition: max-height 1s ease;
   overflow: hidden;
 }
 @media screen and (max-width: 425px) {
@@ -599,6 +599,11 @@ ul {
     gap: 60px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .energy__block {
+    min-height: 100vh;
+  }
+}
 .energy__description {
   padding: 120px 80px 20px 80px;
   display: flex;
@@ -622,41 +627,43 @@ ul {
     width: 100%;
   }
 }
-.energy__slider {
+.energy__imgBlock {
   width: 50%;
-  overflow: hidden;
   position: relative;
-  height: 100%;
 }
 @media screen and (max-width: 768px) {
-  .energy__slider {
-    width: 80%;
+  .energy__imgBlock {
+    width: 100%;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 425px) {
-  .energy__slider {
+  .energy__imgBlock {
     width: 100%;
+    height: 50vh;
   }
-}
-.energy .swiper-slide {
-  min-height: 735px;
-  margin: 0;
-  height: 100%;
-  display: flex;
-}
-@media screen and (max-width: 1200px) {
-  .energy .swiper-slide {
-    min-height: unset;
-  }
-}
-.energy .swiper-wrapper {
-  height: 100%;
 }
 .energy__image {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
   height: 100%;
   object-fit: cover;
-  min-height: 0;
+}
+.energy__image--active {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .energy__image {
+    height: 100%;
+    width: 100%;
+  }
+}
+.energy__span {
+  cursor: pointer;
 }
 .energy__paragraph {
   color: #FFF;
@@ -1022,6 +1029,14 @@ ul {
     padding: 60px 0 0 0;
   }
 }
+@media screen and (min-width: 1440px) {
+  .acoustic {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 40px;
+  }
+}
 .acoustic__h3 {
   color: #FFF;
   font-family: "HeliosExtC";
@@ -1048,6 +1063,11 @@ ul {
 @media screen and (max-width: 768px) {
   .acoustic__block {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .acoustic__block {
+    flex-grow: 1;
   }
 }
 .acoustic__img-wrapper {
@@ -1077,8 +1097,17 @@ ul {
   position: relative;
   transition: all 1s ease;
   width: 100%;
-  height: 100%;
   z-index: 1;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .acoustic__item {
+    flex-grow: 1;
+    align-self: stretch;
+  }
 }
 .acoustic__item:hover .acoustic__img {
   transform: scale(1.2);
@@ -1096,7 +1125,7 @@ ul {
   font-weight: 400;
   line-height: 150%;
   text-transform: uppercase;
-  margin: 0 0 40px 0;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .acoustic__h4 {

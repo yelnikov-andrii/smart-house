@@ -102,14 +102,13 @@ let lastScrollTop = 0;
 
     for (let i = 0; i < furnitureListItems.length; i++) {
       const listItem = furnitureListItems[i];
-      const image = images[i];
     
       listItem.onmouseover = () => {
-        setActiveImage(i);
+        setActiveImageFurniture(i);
       };
     }
 
-    function setActiveImage(index) {
+    function setActiveImageFurniture(index) {
       images.forEach((image, i) => {
         if (i === index) {
           image.classList.add('furniture__img--active');
@@ -119,9 +118,33 @@ let lastScrollTop = 0;
       });
     }
 
-    const image = document.querySelector('.furniture__img');
-
        // furniture actions end
+
+      // energy actions start
+
+    const energyListItems = document.getElementsByClassName('energy__span');
+    const energImages = document.querySelectorAll('.energy__image');
+
+    for (let i = 0; i < energyListItems.length; i++) {
+      const listItemEnergy = energyListItems[i];
+    
+      listItemEnergy.onmouseover = () => {
+        setActiveImageEnergy(i);
+      };
+    }
+
+    function setActiveImageEnergy(index) {
+      energImages.forEach((image, i) => {
+        if (i === index) {
+          image.classList.add('energy__image--active');
+        } else {
+          image.classList.remove('energy__image--active');
+        }
+      });
+    }
+
+    // energy actions end
+       
 
 
 
