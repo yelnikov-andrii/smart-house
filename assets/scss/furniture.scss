@@ -1,9 +1,10 @@
 .furniture {
   background: #24282F;
-  min-height: 100vh;
+  height: 100vh;
 
   @media screen and (max-width: 768px) {
     padding: 0;
+    height: auto;
   }
 
   &__h3 {
@@ -11,7 +12,7 @@
     font-family: 'HeliosExtC';
     font-size: 3vw;
     font-weight: 700;
-    margin: 0 0 60px 0;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -51,16 +52,12 @@
   }
 
   &__description {
-    padding: 120px 80px 45px 80px;
+    padding: 0 80px;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-
-    @media screen and (max-width: 1024px) {
-      padding: 90px 30px 30px;
-    }
 
     @media screen and (max-width: 768px) {
       padding: 60px 20px 20px 20px;
@@ -101,7 +98,7 @@
     height: auto;
     object-fit: cover;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 992px) {
       height: 100%;
     }
 
@@ -120,7 +117,7 @@
     font-size: 1.2vw;
     font-weight: 300;
     line-height: 150%;
-    margin: 0 0 60px 0;
+    margin: 0;
 
     &:first-child {
       margin: 0 0 60px 0;
@@ -136,7 +133,7 @@
   }
 
   &__list {
-    margin: 0 0 138px 0;
+    margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
