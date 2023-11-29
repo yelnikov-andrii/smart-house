@@ -657,12 +657,6 @@ ul {
 @media screen and (max-width: 768px) {
   .energy__imgBlock {
     width: 100%;
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 425px) {
-  .energy__imgBlock {
-    width: 100%;
     height: 50vh;
   }
 }
@@ -954,12 +948,11 @@ ul {
   width: 50%;
   position: relative;
   height: 100%;
-  min-height: 100vh;
 }
 @media screen and (max-width: 768px) {
   .furniture__imgBlock {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
   }
 }
 @media screen and (max-width: 425px) {
@@ -990,6 +983,11 @@ ul {
   .furniture__img {
     height: 100%;
     width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .furniture__img {
+    height: 100%;
   }
 }
 .furniture__paragraph {
